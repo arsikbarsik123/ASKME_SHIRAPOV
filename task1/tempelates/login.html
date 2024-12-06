@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+</head>
+
+<body>
+<!-- Nav bar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Askme</a>
+      <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">
+            <a href="ask.html">Ask</a>
+          </button>
+      </form>
+      <div class="d-flex gap-2">
+          <a href="login.html" class="btn btn-link">Log in</a>
+          <a href="signup.html" class="btn btn-link">Register</a>
+      </div>
+  </div>
+</nav>
+
+<main class="container mt-5">
+  <div class="row">
+    <div class="col-md-8">
+      <!-- Login Form -->
+      <section class="mb-5">
+          <h2>Log In</h2>
+          <div class="alert alert-danger" role="alert">
+              Sorry, wrong password!
+          </div>
+          <form>
+              <div class="mb-3">
+                  <label for="login" class="form-label">Login</label>
+                  <input type="text" class="form-control" id="login" placeholder="Enter your login here" maxlength="50" required>
+              </div>
+              <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" maxlength="50" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Log in!</button>
+              <p class="mt-2"><a href="signup.html">Create new account</a></p>
+          </form>
+      </section>
+      
+    </div>
+    <div class="col">
+        <section class="mb-3">
+            <h2>Popular Tags</h2>
+            <div>
+              <span class="badge text-bg-primary">perl</span>
+              <span class="badge text-bg-secondary">python</span>
+              <span class="badge text-bg-success">Techno Park</span>
+              <span class="badge text-bg-danger">MySql</span>
+              <span class="badge text-bg-warning">django</span>
+              <span class="badge text-bg-info">Mail.Ru</span>
+              <span class="badge text-bg-light">Voloshin</span>
+              <span class="badge text-bg-dark">FireFox</span>
+            </div>
+          </section>
+          <section>
+            <h2>Best members</h2>
+            <div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#">FreeMan</a></li>
+                <li class="list-group-item"><a href="#">Dr.House</a></li>
+                <li class="list-group-item"><a href="#">Bender</a></li>
+                <li class="list-group-item"><a href="#">Queen Victoria</a></li>
+                <li class="list-group-item"><a href="#">V. Pupkin</a></li>
+              </ul>
+            </div>
+          </section>
+    </div>
+
+  </div>
+</main>
+</body>
+</html>
